@@ -7,7 +7,7 @@
       .panel-body
         %p= @pin.description
         %p
-          %strong= @pin.user.email if @pin.user
+          %strong= @pin.user.name if @pin.user
         - if @pin.user == current_user
           = link_to edit_pin_path(@pin) do
             %span.glyphicon.glyphicon-edit
