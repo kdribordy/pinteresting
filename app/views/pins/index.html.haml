@@ -15,4 +15,6 @@
               Edit
             = link_to pin, method: :delete, data: { confirm: 'Are you sure?' } do
               %span.glyphicon.glyphicon-trash
-              Delete
+                Delete
+.center
+  =will_paginate @pins, renderer: BootstrapPagination::Rails
